@@ -1,0 +1,29 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    font-size: 25px;
+}
+
+.container{
+    margin:50px;
+}
+
+.box-1{
+    
+    background-color:black;
+    color : white;
+    border-top: 5px red solid;
+    border-left: 5px red solid;
+    border-right: 5px red solid;
+    border-bottom: 5px red solid;
+}
+
+.navbar{
+    background-color:black;
+    color : white;
+    border-top: 5px red solid;
+    border-left: 5px red solid;
+    border-right: 5px red solid;
+    border-bottom: 5px red solid;
+    margin-top: 0px;
+}
