@@ -1,63 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vyas</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-    <body>
+    <!-- JavaScript and dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-        <div class="header">
-            <center>
-                <pre class="tab">__      __ __     __               _____<br> \ \    / / \ \   / /     /\       / ____|<br> \ \  / /   \ \_/ /     /  \     | (___ <br>  \ \/ /     \   /     / /\ \     \___ \<br>    \  /       | |     / ____ \    ____) |<br>    \/        |_|    /_/    \_\  |_____/</pre>
-            </center>          
-        </div>
-
-        <div id="navbar" style="z-index: +1;">
-            <a href="https://iamvyas.github.io/me/tree1/tree1.html" style="float: left;">VYAS</a>
-            <a href="javascript:void(0)" style="float: right;">Media</a>
-            <a href="javascript:void(0)" style="float: right;">Blog</a>
-            <a href="javascript:void(0)" style="float: right;">Home</a>
-        </div>
-        
-        
-        <div class="container">
-            <div class="box-1">
-                <center>I'm a free thinker...<br>not just coding but give me anything<br>I can turn it into a tool</center>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="box-1">
-                <br>
-                <center>
-                    <img src="mage/dp.jpg" alt="profile pic" style="width:250px;height:250px;padding:top=-50px;">
-                    
-                </center>
-                
-                <center><br>Hello There!<br>Im Vyas, A person who likes to explore stuffs<br>Im currently at final year studying<br><h1>COMPUTER SCIENCE AND ENGINEERING</h1></center>
-                <center><br>I generally love to understand stuff and use to solve my day to day problems<br>the interest in engineering inclined to me as it full of solving real world problem</center>
-                <center><br>I see coding as an art of knitting<br>(every damn stuff you do in your life is an art) ,<br> I feel alive when I do coding<br><br></center>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="box-1">
-                <center>WANNA PING ME...<br><br><a href=https://github.com/iamvyas>GITHUB</a><br><br><a href=https://twitter.com/vyas_io?s=08>TWITTER</a></center>
-            </div>
-        </div>
-        <script>
-            window.onscroll = function() {myFunction()};
+    <style>
+        body {
+            background-color: #1a1a1a; /* Dark blue-grey tone */
             
-            var navbar = document.getElementById("navbar");
-            var sticky = navbar.offsetTop;
-            
-            function myFunction() {
-              if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-              } else {
-                navbar.classList.remove("sticky");
-              }
-            }
-            </script>
-    </body>
+            color: greenyellow; /* Warm green text color */
+            font-family: Lucida Sans Typewriter; /* Rounded and soft font */
+        }
+        /* Style for sticky navbar */
+        .sticky-top {
+          position: -webkit-sticky;
+          position: sticky;
+          top: 0;
+          z-index: 1020; /* Ensure it's above other elements */
+        }
+
+        .navbar {
+      background-color: rgba(0, 0, 0, 0.5) !important; /* Translucent black background */
+    }
+
+        .compo{
+            padding: 2%;
+        }
+      </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#">Vyas </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+        
+    </div>
+
+    <!-- Basic about me -->
+    <div class="compo">
+        <div class="row" style="padding: 2%">
+
+            <div class="col-md-2" style="padding: 2%">
+                <img src="./img/dp4.png" alt="Lion" width="100" height="100">
+            </div>
+            <div class="col-md-10" style="padding: 2%">
+                Hi There,<br>
+                I'm Vyas<br>
+                Give me anything, I can turn it into a tool<br>
+                A computer programmer.
+            </div>      
+        </div>
+    </div>
+    <div class="compo">
+        <div style="padding: 2%">
+            If you are looking for a collaboration<br>
+            Here are the tools in which I can help you with:<br><br><br>
+            1. BACK-END: MERN STACK, SPRINGBOOT, DJANGO<br><br>
+            2. DB: MONGO-DB, MYSQL<br><br>
+            3. CLOUD: AZURE, AWS (I can setup basic applications)<br><br>
+        </div>
+    </div>
+</body>
 </html>
