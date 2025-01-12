@@ -1,24 +1,91 @@
 <!DOCTYPE html>
-<html lang="en" style="background-color: black;">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vyas</title>
+  <title>Responsive Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: "Monoflow", monospace;
+    }
+    nav {
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 10px 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      font-family: "Monoflow", monospace;
+    }
+    .nav-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #e0e0e0;
+    }
+    .nav-item {
+      margin-left: 15px;
+      color: #e0e0e0;
+      text-decoration: none;
+    }
+    .nav-item:hover {
+      text-decoration: underline;
+    }
+    .mobile-menu {
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 50px; /* Adjust to fit below the nav */
+      z-index: 999;
+      padding: 10px 0;
+      font-family: "Monoflow", monospace;
+    }
+    .content {
+      padding: 20px;
+      font-family: "Monoflow", monospace;
+    }
+  </style>
 </head>
-<body style="font-family: 'Courier New', Courier, monospace;background-color: black;color: brown;">
-  <h1>Vyas</h1>
-  <br>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="d-flex justify-content-between align-items-center">
+    <div class="nav-brand">Vyas</div>
+    <div class="d-none d-md-flex">
+      <a href="#" class="nav-item">Home</a>
+      <a href="#" class="nav-item">Blog</a>
+      <a href="#" class="nav-item">Works</a>
+      <a href="#" class="nav-item">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="d-flex justify-content-evenly d-md-none mobile-menu">
+    <a href="#" class="nav-item">Home</a>
+    <a href="#" class="nav-item">Blog</a>
+    <a href="#" class="nav-item">Works</a>
+    <a href="#" class="nav-item">Contact</a>
+  </div>
+
+  <!-- Content Section -->
+  <div class="content">
+    <br>
   Can stitch Programs like sweaters 
   <br>
   <br>
   Hi There anon!<br><br>
-  I build stuffs and surf through the uncertain roughs<br>
+  I build stuffs who surfs through digital forests<br>
   A rebel who breaths on free will<br>
   A poet who writes on tall hill<br>
   Admiring the night sky full of stars<br>
   Cherishing a life full of scars<br>
-  Strength is my gospel mods<br>
-  I will win against any odds<br>
+  Yet, Strength is my gospel <br>
+  Even with zero arsenal from gods<br>
+  I will win against all odds<br>
   <br>
   <br>
   <u>WHAT CAN I HELP YOU WITH:</u>
@@ -44,12 +111,10 @@
   You can check about more of it in my Github
   <br>
   <br>
-  <u>CONTACT:</u>
   <br><br>
+  </div>
 
-  <a href="https://github.com/iamvyas" style="color: brown;text-decoration: none;">Github</a><br>
-  <a href="https://www.linkedin.com/in/iamvyas/" style="color: brown;text-decoration: none;">LinkedIn</a><br>
-  <a href="blogIndex.html" style="color: brown;text-decoration: none;">Blogs</a>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
