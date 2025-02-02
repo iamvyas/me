@@ -115,24 +115,8 @@
   <br><br>
   </div>
 
-  <script>
-    // Fetch JSON file and display its content
-    fetch('./metadata/indexContents.json')
-        .then(response => response.json())
-        .then(data => {
-            let contentDiv = document.getElementById('json-content');
+  <script src="script.js"></script>
 
-            // Convert JSON into an HTML structure
-            contentDiv.innerHTML = `
-                <h2>Country Info</h2>
-                <p><strong>Country:</strong> ${data.country}</p>
-                <p><strong>Capital:</strong> ${data.capital}</p>
-                <p><strong>Population:</strong> ${data.population}</p>
-                <p><strong>Language:</strong> ${data.language}</p>
-            `;
-        })
-        .catch(error => console.error('Error loading JSON:', error));
-</script>
 </body>
 </html>
 
