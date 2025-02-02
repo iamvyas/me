@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Fetch JSON file and display its content
-    fetch('./metadata/indexContent.json')
+    fetch('https://iamvyas.github.io/me/metadata/indexContent.json')
         .then(response => response.json())
         .then(data => {
             let contentDiv = document.getElementById('json-content');
