@@ -46,10 +46,9 @@
   <br>
   <u>SKILLS:</u>
   <br><br>
-  Language: Java , Python , JavaScript<br>
-  Back-end: MERN , Django , Spring<br>
-  DB......: SQL , SQLite , MongoDB<br>
-  Tools...: Docker , AWS , NGINX , CI/CD<br>
+  <div id="block2-content">
+
+  </div>
   <br>
   <br>
   <u>PROJECT:</u>
@@ -73,6 +72,14 @@
             contentDiv.innerHTML = `
                 
                 ${data.block1}
+            `;
+            contentDiv = document.getElementById('block2-content');
+            contentDiv.innerHTML = `
+                
+                ${data.block2}
+                ${data.block3}
+                ${data.block4}
+                ${data.block5}
             `;
         })
         .catch(error => console.error('Error loading JSON:', error));
