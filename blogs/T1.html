@@ -6,75 +6,12 @@
   <title>Responsive Website</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Kavivanar&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #121212;
-      color: #e0e0e0;
-      font-family: "Monoflow", monospace;
-    }
-    .justp {
-      text-align: justify;
-    }
-    nav {
-      background-color: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(10px);
-      padding: 10px 15px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      font-family: "Monoflow", monospace;
-    }
-    .nav-brand {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #e0e0e0;
-    }
-    .nav-item {
-      margin-left: 15px;
-      color: #e0e0e0;
-      text-decoration: none;
-    }
-    .nav-item:hover {
-      text-decoration: underline;
-    }
-    .mobile-menu {
-      background-color: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(10px);
-      position: sticky;
-      top: 50px; /* Adjust to fit below the nav */
-      z-index: 999;
-      padding: 10px 0;
-      font-family: "Monoflow", monospace;
-    }
-    .content {
-      padding: 20px;
-      font-family: "Monoflow", monospace;
-    }
-    .tamil { font-family: 'Kavivanar', cursive; }
-  </style>
+  <link rel="stylesheet" href="../style.css">
+  <script src="../header.js"></script>
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <nav class="d-flex justify-content-between align-items-center">
-    <div class="nav-brand">Vyas</div>
-    <div class="d-none d-md-flex">
-      <a href="../index.html" class="nav-item">Home</a>
-      <a href="../blogIndex.html" class="nav-item">Blog</a>
-      <a href="../works.html" class="nav-item">Works</a>
-      <a href="#" class="nav-item">Contact</a>
-    </div>
-  </nav>
-
-  <!-- Mobile Menu -->
-  <div class="d-flex justify-content-evenly d-md-none mobile-menu">
-    <a href="../index.html" class="nav-item">Home</a>
-    <a href="../blogIndex.html" class="nav-item">Blog</a>
-    <a href="../works.html" class="nav-item">Works</a>
-    <a href="#" class="nav-item">Contact</a>
-  </div>
+  <!-- Header Component -->
+  <header-component root="../"></header-component>
 
   <!-- Content Section -->
   <div class="content">
